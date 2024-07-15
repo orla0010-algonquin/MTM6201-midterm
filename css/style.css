@@ -1,0 +1,924 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* End of Reset */
+/* Fonts */
+
+
+h1 {
+	font-size: 2.027rem;
+	font-family: 'Lato', sans-serif;
+	color: white;
+	text-align: center;
+	padding-top: 15%;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.802rem;
+	font-family: 'Lato', sans-serif;
+}
+
+h3 {
+	font-size: 1.224rem;
+	font-family: 'Lato', sans-serif;
+	color: #d69e3d;
+}
+
+p {
+	font-size: 16px;
+	font-family: 'Karla', sans-serif;
+}
+
+.nav-buttons {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+
+button {
+	font-family: 'Karla', sans-serif;
+}
+
+
+/* Header */
+
+
+header {
+	background-color: black;
+}
+
+.logo-header {
+	padding-top: 25px;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+.nav-bar {
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
+}
+
+.nav-buttons {
+	color: white;
+}
+
+.nav-buttons:hover {
+	color: #d69e3d;
+}
+
+
+/* Main Banner */
+
+
+.banner {
+	background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/hero-background.jpg);
+	background-position: 0,0,50%,45%;
+    background-size: auto, cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-banner {
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.div-button-banner {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.div-button-banner:hover {
+	color: #d69e3d;
+}
+
+.button-banner {
+	border: none;
+	padding: 10px;
+	padding-right: 25px;
+	padding-left: 25px;
+	font-weight: bold;
+}
+
+.button-banner:hover {
+	color: #d69e3d;
+}
+
+
+/* Welcome to my coffee house */
+
+body {
+	background-color: #f3f0e9;
+}
+
+.welcome {
+	background-color: #f3f0e9;
+}
+
+.h3-welcome {
+	padding-top: 50px;
+	padding-left: 10px;
+}
+
+.h2-welcome {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+}
+
+.h2-fair-trade {
+	padding-top: 15px;
+}
+
+.p-fair-trade {
+	padding-top: 15px;
+	padding-bottom: 80px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.h2-local-baked {
+	padding-top: 15px;
+}
+
+.p-local-baked {
+	padding-top: 15px;
+	padding-bottom: 80px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.h2-made-with {
+	padding-top: 15px;
+}
+
+.p-made-with {
+	padding-top: 15px;
+	padding-bottom: 80px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+
+/* Welcome flex */
+
+
+.flex-welcome {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.flex-welcome img:nth-child(1) {
+    grid-column: span 2;
+    width: 100%;
+    height: auto;
+}
+
+.flex-welcome img {
+    width: 100%;
+    height: auto;
+}
+
+.flex-welcome {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* What we offer */
+
+
+.what-we-offer {
+	text-align: center;
+	background-color: #f3f0e9;
+}
+
+.h3-what-we-offer {
+	padding-top: 20px;
+}
+
+.h2-what-we-offer {
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+.img-1-what-we-offer {
+	width: 30%;
+}
+
+.img-2-what-we-offer {
+	width: 30%;
+}
+
+.img-3-what-we-offer {
+	width: 30%;
+}
+
+
+/* Our Menu */
+
+
+.our-menu {
+	background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/coffee-shop.jpeg);
+	background-position: 0,0,50%,45%;
+    background-size: auto, cover;
+	width: 100%;
+	padding-bottom: 60px;
+}
+
+.h3-our-menu {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	padding-top: 50px;
+}
+
+.h2-our-menu {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	color: white;
+	padding-top: 15px;
+}
+
+.div-button-our-menu {
+    text-align: center;
+	padding-top: 30px;
+}
+
+.div-button-our-menu:hover {
+	color: #d69e3d;
+}
+
+.button-our-menu {
+	background-color: white;
+	border: none;
+	font-weight: bolder;
+	font-size: 16px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-family: 'Lato', sans-serif, bold;
+}
+
+.button-our-menu:hover {
+	color: #d69e3d;
+}
+
+.h3-locations {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	padding-top: 50px;
+}
+
+.h2-locations {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	color: white;
+	padding-top: 15px;
+}
+
+.div-button-locations {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.button-locations {
+	font-size: 16px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: rgb(0,0,0,0);
+	font-weight: bolder;
+	color: white;
+	border-color: white;
+	font-family: 'Lato', sans-serif, bold;
+}
+
+.button-locations:hover {
+	color: #d69e3d;
+}
+
+
+/* About Us */
+
+
+.about-us {
+    padding: 10px;
+    background-color: #f3f0e9;
+}
+
+.div-img-about-us {
+	padding: 0 5px;
+}
+
+.img-about-us {
+	padding-top: 80px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.h3-about-us {
+	padding-left: 5px;
+	padding-top: 15px;
+}
+
+.h2-about-us {
+	padding-left: 5px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.p-about-us {
+	padding-left: 5px;
+	padding-bottom: 20px;
+}
+
+.button-about-us {
+	background-color: black;
+	color: white;
+	border: none;
+	font-weight: bolder;
+	font-size: 16px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-family: 'Lato', sans-serif, bold;
+}
+
+.button-about-us:hover {
+	color: #d69e3d;
+}
+
+.div-button-about-us {
+	padding-top: 5px;
+	padding-bottom: 60px;
+}
+
+
+/* Testimonials */
+
+
+.testimonials {
+	background-color: black;
+}
+
+.h3-testimonials {
+	padding-top: 40px;
+	padding-left: 5px;
+}
+
+.h2-testimonials {
+	color: white;
+	padding-left: 5px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+/* testimonial 1 */
+
+.testimonial-1 {
+	background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.6)), url(../images/testimonial-1.jpeg);
+	background-position: 0,0,50%,45%;
+    background-size: auto, cover;
+	width: 100%;
+	height: 600px;
+	padding-bottom: 60px;
+	padding-top: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.p-testimonial-1 {
+	color: white;
+	padding-top: 570px;
+	padding-bottom: 10px;
+}
+
+.h3-testimonial-1 {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.flex-1 {
+	padding-left: 15px;
+}
+
+
+/* testimonial 2 */
+
+
+.testimonial-2 {
+	background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.6)), url(../images/testimonial-2.jpeg);
+	background-position: 0,0,50%,45%;
+    background-size: auto, cover;
+	width: 100%;
+	height: 600px;
+	padding-bottom: 60px;
+	padding-top: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.p-testimonial-2 {
+	color: white;
+	padding-top: 570px;
+	padding-bottom: 10px;
+}
+
+.h3-testimonial-2 {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.flex-2 {
+	padding-left: 15px;
+}
+
+
+/* testimonial 3 */
+
+
+.testimonial-3 {
+	background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.6)), url(../images/testimonial-3.jpeg);
+	background-position: 0,0,50%,45%;
+    background-size: auto, cover;
+	width: 100%;
+	height: 600px;
+	padding-bottom: 60px;
+	padding-top: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.p-testimonial-3 {
+	color: white;
+	padding-top: 570px;
+	padding-bottom: 10px;
+}
+
+.h3-testimonial-3 {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.flex-3 {
+	padding-left: 15px;
+}
+
+
+/* Footer */
+
+
+footer {
+	background-color: black;
+}
+
+.p-footer {
+	color: white;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+
+/* Tablet Version */
+
+
+@media (min-width: 768px) and (max-width: 1099px) {
+
+/* Tablet Welcome */
+
+.flex-welcome {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+	grid-template-areas: 
+    "div1 div2 div3 div4"
+    "div5 div6 div7 div8";
+}
+
+.img1-welcome {
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+    width: 100%;
+    height: auto;
+}
+
+.img2-welcome {
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
+    width: 100%;
+    height: auto;
+}
+
+.img3-welcome {
+	grid-column: 4 / 5;
+	grid-row: 1 / 2;
+    width: 100%;
+    height: auto;
+}
+
+.img4-welcome {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+
+.img5-welcome {
+	grid-column: 4 / 5;
+	grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Tablet What we offer */
+
+
+.flex-wwo {
+	display: grid;
+	grid-template-areas: 
+    "div1 div2 div3 div4"
+    "div5 div6 div7 div8";
+}
+
+.flex-wwo-1 {
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+    width: 100%;
+    height: auto;
+}
+
+.flex-wwo-2 {
+	grid-column: 3 / 5;
+	grid-row: 1 / 2;
+    width: 100%;
+    height: auto;
+}
+
+.flex-wwo-3 {
+	grid-column: 2 / 4;
+	grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Tablet Our Menu */
+
+
+.our-menu {
+	display: flex;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10%;
+}
+
+.our-menu {
+	background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/coffee-shop.jpeg);
+	background-position: 0,0,50%,45%;
+    background-size: auto, cover;
+	width: 100%;
+	min-height: 300px;
+	padding-bottom: 60px;
+}
+
+
+/* Tablet About Us */
+
+
+.about-us {
+	display: flex;
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
+
+.img-about-us {
+	padding-top: 0px;
+	padding-right: 10px;
+    width: 50vw;
+}
+
+.h2-our-menu {
+	padding-right: 10%;
+	padding-left: 10%;
+	text-align: center;
+}
+
+.h2-locations {
+	padding-right: 10%;
+	padding-left: 10%;
+	text-align: center;
+}
+
+
+/* Tablet Testimonials */
+
+
+.flex-testimonials {
+	display: flex;
+	padding: 20px;
+}
+
+.testimonial-1 {
+	width: 100%;
+	height: 250px;
+	padding-bottom: 60px;
+	padding-top: 80px;
+	display: block;
+    margin: 0 auto;
+}
+
+.testimonial-2 {
+	width: 100%;
+	height: 250px;
+	padding-bottom: 60px;
+	padding-top: 80px;
+	display: block;
+    margin: 0 auto;
+}
+
+.testimonial-3 {
+	width: 100%;
+	height: 250px;
+	padding-bottom: 60px;
+	padding-top: 80px;
+	display: block;
+    margin: 0 auto;
+}
+
+}
+
+
+/* Destop Version */
+
+
+@media (min-width: 1100px) {
+
+/* Desktop Header */
+
+header {
+	padding-bottom: 15px;
+}
+
+.grid-header {
+	display: grid;
+	grid-template-areas: 
+    "div1 div2 div3 div4 div5 div6 div7 div8"
+}
+
+.logo-header {
+	grid-column: 2;
+    width: 100%;
+    height: auto;
+}
+
+.nav-bar {
+	grid-column: 6;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Desktop Welcome */
+
+
+.h3-welcome {
+	padding-left: 10%;
+}
+
+.h2-welcome {
+	padding-left: 10%;
+}
+
+.flex-welcome {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+	grid-template-areas: 
+    "div1 div2 div3 div4"
+    "div5 div6 div7 div8";
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.img1-welcome {
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+    width: 100%;
+    height: auto;
+}
+
+.img2-welcome {
+	grid-column: 3 / 4;
+	grid-row: 1 / 2;
+    width: 100%;
+    height: auto;
+}
+
+.img3-welcome {
+	grid-column: 4 / 5;
+	grid-row: 1 / 2;
+    width: 100%;
+    height: auto;
+}
+
+.img4-welcome {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+
+.img5-welcome {
+	grid-column: 4 / 5;
+	grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Desktop What We Offer */
+
+
+.flex-wwo {
+	display: flex;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.flex-wwo-1 {
+    width: 100%;
+    height: auto;
+}
+
+.flex-wwo-2 {
+    width: 100%;
+    height: auto;
+}
+
+.flex-wwo-3 {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Desktop Our Menu */
+
+
+.our-menu {
+	background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/coffee-shop.jpeg);
+	background-position: 0,0,50%,45%;
+    background-size: auto, cover;
+	width: 100%;
+	min-height: 350px;
+	padding-bottom: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 10%;
+}
+
+.div-our-menu {
+	padding-left: 3vw;
+}
+
+.div-locations {
+	padding-right: 3vw;
+}
+
+.h2-our-menu {
+	padding-right: 10%;
+	padding-left: 10%;
+	text-align: center;
+}
+
+.h2-locations {
+	padding-right: 10%;
+	padding-left: 10%;
+	text-align: center;
+}
+
+
+/* Desktop About Us */
+
+
+.about-us {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 90px;
+	padding-bottom: 100px;
+	
+}
+
+.img-about-us {
+	padding-top: 0px;
+	padding-right: 10px;
+    width: 45vw;
+}
+
+.div-about-us-content {
+	padding-top: 15%;
+}
+
+
+/* Desktop Testimonials */
+
+
+.flex-testimonials {
+	display: flex;
+	padding: 20px;
+}
+
+.testimonial-1 {
+	padding-inline: 220px;
+}
+
+.testimonial-2 {
+	padding-inline: 220px;
+}
+
+.testimonial-3 {
+	padding-inline: 220px;
+}
+
+}
